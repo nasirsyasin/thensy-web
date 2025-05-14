@@ -1,53 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thensy - IT Solutions</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Professional IT Solutions Company">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-content">
-            <div class="logo">THENSY</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+import React from "react";
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Innovative IT Solutions for Your Business</h1>
-            <p>Driving digital transformation through cutting-edge technology solutions</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
-    </section>
+export default function HomePage() {
+  return (
+    <main className="bg-gray-950 text-white font-sans">
+      {/* Hero Section */}
+      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          Revolutionizing Business with AI-Driven Software
+        </h1>
+        <p className="text-lg md:text-xl text-gray-400 mb-6 max-w-2xl">
+          NeuraSoft AI builds cutting-edge AI solutions tailored for enterprise needs, from predictive analytics to natural language processing.
+        </p>
+        <a href="#" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-6 py-3 rounded-xl">
+          Get a Demo
+        </a>
+      </section>
 
-    <section class="services" id="services">
-        <h2 class="section-title">Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Cloud Solutions</h3>
-                <p>Secure and scalable cloud infrastructure tailored to your needs</p>
-            </div>
-            <div class="service-card">
-                <h3>Cybersecurity</h3>
-                <p>Comprehensive protection for your digital assets</p>
-            </div>
-            <div class="service-card">
-                <h3>Software Development</h3>
-                <p>Custom software solutions that drive business growth</p>
-            </div>
-        </div>
-    </section>
+      {/* Trust Logos */}
+      <section className="flex justify-center gap-8 py-8 bg-gray-900">
+        <img src="/logos/client1.svg" alt="Client 1" className="h-10" />
+        <img src="/logos/client2.svg" alt="Client 2" className="h-10" />
+        <img src="/logos/client3.svg" alt="Client 3" className="h-10" />
+      </section>
 
-    <footer id="contact">
-        <p>&copy; 2023 Thensy. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+      {/* About Us */}
+      <section className="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-4">About Us</h2>
+        <p className="text-gray-400">
+          At NeuraSoft AI, our mission is to empower businesses through intelligent automation and insights. Our team of AI researchers and engineers deliver customized solutions that scale.
+        </p>
+      </section>
+
+      {/* Solutions */}
+      <section className="py-20 px-6 bg-gray-900">
+        <h2 className="text-3xl font-semibold text-center mb-12">Our Solutions</h2>
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="bg-gray-800 p-6 rounded-2xl shadow-xl">
+            <h3 className="text-xl font-bold mb-2">Predictive Analytics</h3>
+            <p className="text-gray-400">Forecast trends and behaviors with machine learning models.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-2xl shadow-xl">
+            <h3 className="text-xl font-bold mb-2">Natural Language Processing</h3>
+            <p className="text-gray-400">Extract insights and automate communication with advanced NLP.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-2xl shadow-xl">
+            <h3 className="text-xl font-bold mb-2">Computer Vision</h3>
+            <p className="text-gray-400">Leverage image and video understanding for real-world AI solutions.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies */}
+      <section className="py-20 px-6 text-center max-w-6xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-12">Case Studies</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-gray-800 p-6 rounded-2xl">
+            <h3 className="text-xl font-bold mb-2">Retail Sales Forecasting</h3>
+            <p className="text-gray-400">Boosted client revenue by 22% using our predictive analytics engine.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-2xl">
+            <h3 className="text-xl font-bold mb-2">Customer Support Automation</h3>
+            <p className="text-gray-400">Reduced response time by 60% with our NLP-driven chatbot system.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Preview */}
+      <section className="py-20 px-6 bg-gray-900 text-center max-w-6xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-12">Latest Blog Posts</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-gray-800 p-4 rounded-xl">
+            <h4 className="font-bold text-lg mb-2">AI Trends 2025</h4>
+            <p className="text-gray-400">Key innovations in artificial intelligence and their business impact.</p>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-xl">
+            <h4 className="font-bold text-lg mb-2">NLP in Finance</h4>
+            <p className="text-gray-400">How banks use language models to understand risk and compliance.</p>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-xl">
+            <h4 className="font-bold text-lg mb-2">Edge AI Applications</h4>
+            <p className="text-gray-400">Exploring AI on devices in healthcare, retail, and security.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Us */}
+      <section className="py-20 px-6 text-center max-w-3xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
+        <form className="flex flex-col gap-4 mt-6">
+          <input type="text" placeholder="Your Name" className="p-3 rounded-md bg-gray-800 text-white" />
+          <input type="email" placeholder="Your Email" className="p-3 rounded-md bg-gray-800 text-white" />
+          <textarea placeholder="Your Message" rows="4" className="p-3 rounded-md bg-gray-800 text-white"></textarea>
+          <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white text-lg py-3 rounded-xl">
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-950 py-6 px-6 text-center text-gray-500">
+        <p>&copy; 2025 NeuraSoft AI. All rights reserved.</p>
+        <div className="flex justify-center gap-4 mt-2">
+          <a href="#" className="hover:underline">LinkedIn</a>
+          <a href="#" className="hover:underline">Twitter</a>
+          <a href="#" className="hover:underline">Privacy Policy</a>
+        </div>
+      </footer>
+    </main>
+  );
+}
