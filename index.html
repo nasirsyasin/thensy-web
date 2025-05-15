@@ -4,10 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thensy AI</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .banner-slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: #1e293b;
+    }
+
+    .slide h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .slide p {
+      color: #94a3b8;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+  </style>
 </head>
 <body>
   <main class="container">
@@ -28,6 +65,7 @@
         </div>
       </div>
     </section>
+
     <!-- Hero Section -->
     <section class="hero">
       <h1>Revolutionizing Business with AI-Driven Software</h1>
@@ -40,7 +78,9 @@
 
     <!-- Trust Logos -->
     <section class="logos">
-      <img src="thensy_banner.svg" />
+      <img src="/logos/client1.svg" alt="Client 1" />
+      <img src="/logos/client2.svg" alt="Client 2" />
+      <img src="/logos/client3.svg" alt="Client 3" />
     </section>
 
     <!-- About Us -->
