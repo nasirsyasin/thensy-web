@@ -139,3 +139,38 @@ body {
 .footer-links a:hover {
   text-decoration: underline;
 }
+ .banner-slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: #1e293b;
+    }
+
+    .slide h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .slide p {
+      color: #94a3b8;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
