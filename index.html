@@ -4,66 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thensy AI</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
- <style>
-   .banner-slider {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Set banner height */
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  width: 300%;
-  animation: slide 12s infinite;
-}
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-  position: relative;
-  height: 500px; /* Match the slider height */
-}
-
-.slide img {
-  width: 100%;
-  height: 100%; /* Ensure full coverage */
-  object-fit: cover;
-  opacity: 0.7;
-}
-
-.slide-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  z-index: 2;
-  text-align: center;
-}
-
-.slide h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.slide p {
-  color: #cbd5e1;
-}
-
-  </style>
 </head>
 <body>
+  <!-- Website Header -->
+  <header class="site-header sticky">
+    <div class="logo">
+      <img src="/logos/logo.png" alt="Thensy Logo" class="logo-img">
+      <span>Thensy AI</span>
+    </div>
+    <nav class="main-nav">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <main class="container">
     <!-- Banner Slider -->
     <section class="banner-slider">
       <div class="slides">
         <div class="slide">
-          <img src="thensy_banner.svg" alt="Banner 1">
+          <img src="/banners/banner1.jpg" alt="Banner 1">
           <div class="slide-content">
             <h2>Empowering Enterprises with AI</h2>
             <p>Custom solutions for NLP, analytics, and vision.</p>
@@ -96,15 +63,15 @@
       <a href="#" class="button">Get a Demo</a>
     </section>
 
-<!--     <!-- Trust Logos -->
+    <!-- Trust Logos -->
     <section class="logos">
       <img src="/logos/client1.svg" alt="Client 1" />
       <img src="/logos/client2.svg" alt="Client 2" />
       <img src="/logos/client3.svg" alt="Client 3" />
-    </section> -->
+    </section>
 
     <!-- About Us -->
-    <section class="about">
+    <section id="about" class="about">
       <h2>About Us</h2>
       <p>
         At Thensy AI, our mission is to empower businesses through intelligent automation
@@ -113,7 +80,7 @@
     </section>
 
     <!-- Solutions -->
-    <section class="solutions">
+    <section id="solutions" class="solutions">
       <h2>Our Solutions</h2>
       <div class="grid">
         <div class="card">
@@ -147,7 +114,7 @@
     </section>
 
     <!-- Blog -->
-    <section class="blog">
+    <section id="blog" class="blog">
       <h2>Latest Blog Posts</h2>
       <div class="grid">
         <div class="card">
@@ -166,7 +133,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <form>
         <input type="text" placeholder="Your Name" />
