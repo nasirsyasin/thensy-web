@@ -58,7 +58,7 @@ body {
 
 .slides {
   display: flex;
-  animation: slide 20s infinite;
+  animation: slide 20s linear infinite;
 }
 
 .slide {
